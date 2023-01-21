@@ -30,12 +30,10 @@ function App() {
 
   const openSideBar = () => {
     setSideBarOpen(true);
-    console.log(sideBarOpen);
   };
 
   const closeSideBar = () => {
     setSideBarOpen(false);
-    console.log(sideBarOpen);
   };
 
   return (
