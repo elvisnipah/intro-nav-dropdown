@@ -12,8 +12,8 @@ import useComponentVisible from "../hooks/use-component-visible";
 const NavMenu = (props) => {
   const FeaturesTabCode = () => {
     return (
-      <div>
-        <div className="pl-8 py-2 flex flex-col gap-3 xl:absolute xl:left-[8%] xl:top-[8%] xl:bg-white xl:p-4 xl:rounded-xl">
+      <div className="xl:absolute xl:top-[125%] xl:bg-white xl:rounded-xl pl-8 xl:pr-8 py-2 ">
+        <div className="flex flex-col gap-3">
           <span className="cursor-pointer flex gap-3 items-center hover:text-gray-600 max-w-[120px]">
             <img src={todoIcon} alt="" className="h-4" /> <p>Todo List</p>
           </span>
@@ -34,8 +34,8 @@ const NavMenu = (props) => {
   const FeaturesTabComponent = () => {
     const { ref, isComponentVisible } = useComponentVisible(false);
     return (
-      <div ref={ref}>
-        <div className="cursor-pointer flex items-center relative">
+      <div ref={ref} className="relative">
+        <div className="cursor-pointer flex items-center">
           <span className="pr-2 hover:text-[hsl(0,0%,8%)]">Features</span>
           <img src={isComponentVisible ? upArrowIcon : downArrowIcon} alt="" />
         </div>
@@ -46,15 +46,15 @@ const NavMenu = (props) => {
 
   const CompanyTabCode = () => {
     return (
-      <div>
-        <div className="pl-8 py-2 flex flex-col gap-2 xl:absolute xl:left-[18%] xl:top-[8%] xl:bg-white xl:p-4 xl:rounded-xl">
-          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px]">
+      <div className="pl-8 py-2 xl:absolute xl:top-[125%] xl:bg-white xl:p-4 xl:rounded-xl">
+        <div className="flex flex-col gap-2">
+          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px] xl:w-[90px]">
             History
           </p>
-          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px]">
+          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px] xl:w-[90px]">
             Our Team
           </p>
-          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px]">
+          <p className="hover:text-[hsl(0,0%,8%)] cursor-pointer max-w-[90px] xl:w-[90px]">
             Blog
           </p>
         </div>
@@ -65,7 +65,7 @@ const NavMenu = (props) => {
   const CompanyTabComponent = () => {
     const { ref, isComponentVisible } = useComponentVisible(false);
     return (
-      <div ref={ref}>
+      <div ref={ref} className="relative">
         <div className="flex items-center cursor-pointer relative">
           <span className="pr-2 hover:text-[hsl(0,0%,8%)]">Company</span>
           <img src={isComponentVisible ? upArrowIcon : downArrowIcon} alt="" />
