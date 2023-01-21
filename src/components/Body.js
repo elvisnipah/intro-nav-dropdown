@@ -26,7 +26,7 @@ function Body(props) {
         <button className="bg-[hsl(0,0%,8%)] text-white rounded-xl h-12 p-4 flex justify-center items-center mt-4 font-epilogue font-bold hover:bg-[hsl(0,0%,98%)] hover:text-[hsl(0,0%,8%)] border-[2px] border-[hsl(0,0%,8%)]">
           Learn more
         </button>
-        <div className="flex mt-12 justify-between p-2 xl:gap-12">
+        <div className="flex mt-12 justify-between p-2 gap-3 xl:gap-12">
           <img src={clientDatabiz} alt="" className="h-[18px]" />
           <img src={clientAudiophile} alt="" className="h-[18px]" />
           <img src={clientMeet} alt="" className="h-[18px]" />
