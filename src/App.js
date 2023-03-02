@@ -37,7 +37,10 @@ function App() {
   };
 
   return (
-    <div className="grow bg-[hsl(0_0%_98%)] text-[18px] font-epilogue flex flex-col">
+    <div
+      className="bg-[hsl(0_0%_98%)] text-[18px] font-epilogue flex flex-col max-w-[1280px]"
+      id="app"
+    >
       {/* {windowSize} */}
       <Header showSideBar={openSideBar} mobileView={mobileView} />
       {sideBarOpen && <Sidebar closeSideBar={closeSideBar} />}
