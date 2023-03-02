@@ -1,9 +1,11 @@
-# Page created for a Frontend Mentor Challenge
+## Page created for a Frontend Mentor Challenge
 
 Find it hosted at https://brilliant-sprinkles-41b592.netlify.app/
 
-# Frontend Mentor Challenge Link
+## Frontend Mentor Challenge Link
 
-https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5
+https://intro-nav-dropdown.vercel.app/
 
-Made with React and TailwindCSS
+## Tools
+
+React and TailwindCSS
